@@ -14,9 +14,7 @@ const { Header, Content, Footer } = Layout;
 const MLPortfolio = () => {
   return (
     <Layout className="layout">
-      <Header>
-        <Navbar />
-      </Header>
+    <Navbar />
       <Content style={{ padding: '0 50px' }}>
         <div className="site-layout-content">
           <Introduction />

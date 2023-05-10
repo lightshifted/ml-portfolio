@@ -7,14 +7,14 @@ const Projects = () => (
     <div className="projects-section">
       <Title level={2}>Projects</Title>
       {/* Add a Card component for each project */}
-      <Card title="Project 1" extra={<a href="https://project1-link">More</a>} style={{ marginBottom: 20 }}>
+      <Card title="JobHive" extra={<a href="https://project1-link">GitHub Repo</a>} style={{ marginBottom: 20 }}>
         <Text>
-          A brief description of your project, its goals, technologies used, and your role in the project.
+          An open-source agent-actor system for job search assistance.
         </Text>
       </Card>
-      <Card title="Project 2" extra={<a href="https://project2-link">More</a>} style={{ marginBottom: 20 }}>
+      <Card title="TablesGPT" extra={<a href="https://project2-link">GitHub Repo</a>} style={{ marginBottom: 20 }}>
         <Text>
-          A brief description of your project, its goals, technologies used, and your role in the project.
+        GPT-powered solution for extracting and modifying data in tables using natural language commands.
         </Text>
       </Card>
       {/* Add more Card components for other projects */}

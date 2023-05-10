@@ -1,0 +1,31 @@
+.navbar :local {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo :local {
+  display: flex;
+  justify-content: start;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1890ff;
+}
+
+.navbar-menu :local {
+  display: flex;
+}
+
+.navbar-menu .ant-menu-item :local {
+  margin: 0 10px;
+}
+
+.navbar-menu .ant-menu-item a :local {
+  color: #333;
+}
+
+.navbar-menu .ant-menu-item a:hover,
+.navbar-menu .ant-menu-item-selected a :local {
+  color: #1890ff;
+}
