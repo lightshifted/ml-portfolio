@@ -7,8 +7,8 @@ const Experience = () => (
       <Title level={2}>Experience</Title>
       <Timeline>
         <Timeline.Item>
-          <Title level={4}>Job Title 1</Title>
-          <Text>Company 1</Text>
+          <Title level={4}>Software Developer</Title>
+          <Text>ContractQA | </Text>
           <Text>Start Date - End Date</Text>
           <Text>
             A brief description of your responsibilities and achievements in this position.
