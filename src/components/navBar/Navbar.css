@@ -1,0 +1,30 @@
+.navbar {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1890ff;
+  }
+  
+  .navbar-menu {
+    display: flex;
+  }
+  
+  .navbar-menu .ant-menu-item {
+    margin: 0 10px;
+  }
+  
+  .navbar-menu .ant-menu-item a {
+    color: #333;
+  }
+  
+  .navbar-menu .ant-menu-item a:hover,
+  .navbar-menu .ant-menu-item-selected a {
+    color: #1890ff;
+  }
+  
