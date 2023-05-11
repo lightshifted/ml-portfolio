@@ -29,3 +29,10 @@
 .navbar-menu .ant-menu-item-selected a :local {
   color: #1890ff;
 }
+
+@media screen and (max-width: 767px) {
+  .navbar :local {
+    display: none;
+    height: 0px;
+  }
+}

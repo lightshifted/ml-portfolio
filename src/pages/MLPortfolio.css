@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+.layout {
+    min-height: 100vh;
+}
+
+.portfolio-header {
+    background: #fff;
+    text-align: center;
+}
+
+.portfolio-content {
+    padding: 0 50px;
+    max-width: 75rem;
+    margin: 0 auto;
+}

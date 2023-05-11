@@ -7,6 +7,7 @@ import Experience from '../components/experienceCard/Experience';
 import Projects from '../components/projectsCard/Projects';
 import Skills from '../components/skillsCard/Skills';
 import Contact from '../components/contactCard/Contact';
+import './MLPortfolio.css'
 
 const { Header, Content, Footer } = Layout;
 
@@ -14,8 +15,10 @@ const { Header, Content, Footer } = Layout;
 const MLPortfolio = () => {
   return (
     <Layout className="layout">
-    <Navbar />
-      <Content style={{ padding: '0 50px' }}>
+      <Header className="portfolio-header">
+        <Navbar />
+      </Header>
+      <Content className="portfolio-content">
         <div className="site-layout-content">
           <Introduction />
           <Experience />
@@ -25,7 +28,7 @@ const MLPortfolio = () => {
         </div>
       </Content>
       <Footer style={{ textAlign: 'center' }}>
-      ©{new Date().getFullYear()} Jason Wheeler. All Rights Reserved.
+        ©{new Date().getFullYear()} Jason Wheeler. All Rights Reserved.
       </Footer>
     </Layout>
   );
