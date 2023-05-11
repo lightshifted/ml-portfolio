@@ -1,29 +1,60 @@
-.experience-section :local {
+:global .experience-section {
     max-width: 800px;
     margin: 0 auto;
     padding: 24px;
-  }
-  
-  .experience-card :local {
-    background-color: #f9f9f9;
+}
+
+:global .experience-card {
+    background-color: #ffffff;
     padding: 10px;
     border-radius: 4px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .ant-timeline-item-head :local {
+}
+
+:global .ant-timeline-item-head {
     background-color: #1890ff !important;
     border-color: #1890ff !important;
-  }
+}
 
-  .experience-date :local {
+:local .ant-timeline-item-content {
+    inset-inline-start: calc(50% - 16px);
+    width: calc(50% - 12px);
+    text-align: start;
+}
+
+:local .experience-date {
     display: block;
     margin-bottom: 4px;
-    font-weight: bold;
+    /* font-weight: bold; */
     margin-top: 1px;
-  }
+    margin-bottom: 1px;
+}
 
-  .timeline-container :local {
+:local .timeline-container {
     max-height: 400px;
+    max-width: auto;
     overflow-y: auto;
-  }
+    scrollbar-width: thin;
+    scrollbar-color: #d8d8d8 #f5f5f5;
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f7f7f7;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d4d4d4;
+  border-radius: 5px;
+  border: 2px solid #f7f7f7;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #b1b1b1;
+}
+
