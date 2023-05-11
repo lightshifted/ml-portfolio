@@ -10,7 +10,7 @@ const { Header } = Layout;
 const Navbar = () => {
   return (
     <Header className={`${styles.navbar} ${styles.fixed}`}>
-      <div className={styles['navbar-logo']}>Jason's Portfolio</div>
+      <div className={styles['navbar-logo']}>View Website Repo</div>
       <Menu mode="horizontal" className={styles['navbar-menu']}>
         <Menu.Item key="1">
           <Link
@@ -36,7 +36,7 @@ const Navbar = () => {
             Experience
           </Link>
         </Menu.Item>
-        <Menu.Item key="2">
+        <Menu.Item key="3">
           <Link
             activeClass={styles.active}
             to="projects"
@@ -48,7 +48,7 @@ const Navbar = () => {
             Projects
           </Link>
         </Menu.Item>
-        <Menu.Item key="2">
+        <Menu.Item key="4">
           <Link
             activeClass={styles.active}
             to="skills"
@@ -60,7 +60,7 @@ const Navbar = () => {
             Skills
           </Link>
         </Menu.Item>
-        <Menu.Item key="2">
+        <Menu.Item key="5">
           <Link
             activeClass={styles.active}
             to="contact"

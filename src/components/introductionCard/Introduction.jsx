@@ -4,7 +4,7 @@ import { Card, Avatar, Typography, Divider } from 'antd';
 const { Text, Title } = Typography;
 
 const Introduction = () => (
-    <div className="introduction-section" >
+    <div id="introduction" className="introduction-section" >
       <Card style={{ textAlign: 'center', marginTop: "1rem" }}>
         <Avatar size={115} src="./portfolio_avatar.jpg" />
         <Title level={2}>Jason Wheeler</Title>

@@ -4,7 +4,7 @@ import { Card, Typography, Descriptions } from "antd";
 const { Title } = Typography;
 
 const Projects = () => (
-  <div className="projects-section">
+  <div id="projects" className="projects-section">
     <Title level={2} >Projects</Title>
     {/* Add a Card component for each project */}
     <Card title="JobHive" extra={<a href="https://github.com/lightshifted/JobHive">GitHub Repo</a>} style={{ marginBottom: 20 }}>
@@ -13,7 +13,7 @@ const Projects = () => (
         An agent-actor system for job search assistance.
       </Descriptions.Item>
       <Descriptions.Item label="Technologies Used">
-        LangChain, Ray, OpenAI API, Chroma, PromptLayer, React, Ant Design, FastAPI
+        LangChain, Ray, OpenAI API, Chroma, Websockets, PromptLayer, React, Ant Design, FastAPI
       </Descriptions.Item>
       <Descriptions.Item label="Problem Statement">
         Design and develop an agent-actor system consisting of a parent agent responsible for task delegation, along with child agents 

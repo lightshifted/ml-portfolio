@@ -5,7 +5,7 @@ import { GithubOutlined, LinkedinOutlined } from "@ant-design/icons";
 const { Title } = Typography;
 
 const Contact = () => (
-    <div className="contact-section">
+    <div id="contact" className="contact-section">
       <Title level={2}>Contact</Title>
       <Button type="primary" icon={<GithubOutlined />} href="https://github.com/lightshifted">
         Github

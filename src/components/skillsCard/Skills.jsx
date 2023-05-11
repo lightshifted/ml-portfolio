@@ -4,7 +4,7 @@ import { Typography, Progress, Row, Col } from "antd";
 const { Title } = Typography;
 
 const Skills = () => (
-  <div className="skills-section">
+  <div id="skills" className="skills-section">
     <Title level={2}>Skills</Title>
     <Title level={4}>Languages</Title>
     <Title level={5}>Python <Progress percent={94} /></Title>

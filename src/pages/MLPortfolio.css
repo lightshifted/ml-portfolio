@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 
-.layout {
-    min-height: 100vh;
-}
-
 .portfolio-header {
     background: #fff;
     text-align: center;
@@ -12,21 +8,28 @@
 
 .portfolio-content {
     padding: 0 50px;
-    max-width: 75rem;
+    max-width: rem;
     margin: 0 auto;
 }
 
 @media screen and (max-width: 768px) {
     /* Styles for screens up to 768px wide */
-    .portfolio-content {
-      padding: 10px;
-      min-width: 500px;
-    }
+    .portfolio-header {
+      background: #fff;
+      text-align: center;
+      display: none;
   }
-  
+
+  .portfolio-content {
+      padding: 0 50px;
+      margin: 0 auto;
+  }
+}
+
   @media screen and (max-width: 480px) {
     /* Styles for screens up to 480px wide */
     .portfolio-content {
       padding: 5px;
     }
   }
+

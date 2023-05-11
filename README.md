@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# Jason's Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+👋🏾 Welcome to the GitHub repository for my portfolio website! This repository contains the source code for the portfolio, which is built using React.
 
-## Available Scripts
+## Project Structure
 
-In the project directory, you can run:
+The core components of the portfolio website are organized as follows:
 
-### `npm start`
+```javascript
+import React from 'react';
+import { Layout } from 'antd';
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+import Navbar from '../components/navBar/Navbar';
+import Introduction from '../components/introductionCard/Introduction';
+import Experience from '../components/experienceCard/Experience';
+import Projects from '../components/projectsCard/Projects';
+import Skills from '../components/skillsCard/Skills';
+import Contact from '../components/contactCard/Contact';
+import './MLPortfolio.css'
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+const { Header, Content, Footer } = Layout;
 
-### `npm test`
+const MLPortfolio = () => {
+  return (
+    <Layout className="layout">
+      <Header className="portfolio-header">
+        <Navbar />
+      </Header>
+      <Content className="portfolio-content">
+        <div className="site-layout-content">
+          <Introduction />
+          <Experience />
+          <Projects />
+          <Skills />
+          <Contact />
+        </div>
+      </Content>
+      <Footer style={{ textAlign: 'center' }}>
+        ©{new Date().getFullYear()} Jason Wheeler. All Rights Reserved.
+      </Footer>
+    </Layout>
+  );
+};
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+export default MLPortfolio;
+```
+<p>
+The main entry point of the application is the MLPortfolio component. This component represents the entire portfolio website and serves as the top-level container. It is responsible for rendering the layout, including the header, content, and footer.
 
-### `npm run build`
+The structure of the website is divided into several components:
+</p>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- `Navbar`: This component represents the navigation bar at the top of the website.
+- `Introduction`: This component provides an introduction to the portfolio and showcases your personal information.
+- `Experience`: This component displays your relevant work experience and achievements.
+- `Projects`: This component showcases the machine learning projects you have worked on.
+- `Skills`: This component highlights your skills and expertise in machine learning.
+- `Contact`: This component allows visitors to get in touch with you.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The `Layout` component from the Ant Design library is used to create a basic structure for the website, with a header, content area, and footer. The `Footer` component displays copyright information and your name. The website is responsive, though modifications to the CSS for mobile devices is needed.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Usage
+To run this portfolio website locally, follow these steps:
 
-### `npm run eject`
+1. Clone the repository: `git clone [repository URL]`
+2. Navigate to the project directory: cd [project directory]
+3. Install the dependencies: npm install
+4. Start the development server: npm start
+5. Open your browser and visit http://localhost:3000 to see the portfolio website.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Feel free to explore the source code and make any modifications or enhancements according to your needs.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Credits
+This portfolio website is developed and maintained by Jason Wheeler. Thank you for visiting and considering my machine learning portfolio!
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If you have any questions or would like to get in touch, please feel free to reach out to me.
