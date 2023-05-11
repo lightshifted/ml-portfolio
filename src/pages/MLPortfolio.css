@@ -15,3 +15,18 @@
     max-width: 75rem;
     margin: 0 auto;
 }
+
+@media screen and (max-width: 768px) {
+    /* Styles for screens up to 768px wide */
+    .portfolio-content {
+      padding: 10px;
+      min-width: 500px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    /* Styles for screens up to 480px wide */
+    .portfolio-content {
+      padding: 5px;
+    }
+  }

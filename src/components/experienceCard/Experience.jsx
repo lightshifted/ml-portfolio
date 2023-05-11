@@ -26,7 +26,7 @@ const Experience = () => {
 
   return (
 
-  <div className={styles["experience-section"]}>
+  <div id="experience" className={styles["experience-section"]}>
     <Title level={2}>Experience</Title>
     <div className={styles["timeline-container"]}>
       <Timeline mode="alternate">

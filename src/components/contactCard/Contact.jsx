@@ -7,10 +7,10 @@ const { Title } = Typography;
 const Contact = () => (
     <div className="contact-section">
       <Title level={2}>Contact</Title>
-      <Button type="primary" icon={<GithubOutlined />} href="https://github.com/yourusername">
+      <Button type="primary" icon={<GithubOutlined />} href="https://github.com/lightshifted">
         Github
       </Button>
-      <Button type="primary" icon={<LinkedinOutlined />} href="https://www.linkedin.com/in/yourusername/" style={{ marginLeft: 20 }}>
+      <Button type="primary" icon={<LinkedinOutlined />} href="https://www.linkedin.com/in/jason-loves-ml/" style={{ marginLeft: 20 }}>
         LinkedIn
       </Button>
     </div>

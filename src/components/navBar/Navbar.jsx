@@ -2,29 +2,77 @@ import React from 'react';
 import { Menu, Layout } from 'antd';
 import { NavLink } from 'react-router-dom';
 import styles from './Navbar.module.css';
+import { Link } from 'react-scroll';
+
 
 const { Header } = Layout;
 
 const Navbar = () => {
   return (
-    <Header className={styles.navbar}>
+    <Header className={`${styles.navbar} ${styles.fixed}`}>
       <div className={styles['navbar-logo']}>Jason's Portfolio</div>
       <Menu mode="horizontal" className={styles['navbar-menu']}>
         <Menu.Item key="1">
-          <NavLink to="/" activeClassName={styles.active}>Home</NavLink>
+          <Link
+            activeClass={styles.active}
+            to="home"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            Home
+          </Link>
         </Menu.Item>
         <Menu.Item key="2">
-          <NavLink to="/experience" activeClassName={styles.active}>Experience</NavLink>
+          <Link
+            activeClass={styles.active}
+            to="experience"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            Experience
+          </Link>
         </Menu.Item>
-        <Menu.Item key="3">
-          <NavLink to="/projects" activeClassName={styles.active}>Projects</NavLink>
+        <Menu.Item key="2">
+          <Link
+            activeClass={styles.active}
+            to="projects"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            Projects
+          </Link>
         </Menu.Item>
-        <Menu.Item key="4">
-          <NavLink to="/skills" activeClassName={styles.active}>Skills</NavLink>
+        <Menu.Item key="2">
+          <Link
+            activeClass={styles.active}
+            to="skills"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            Skills
+          </Link>
         </Menu.Item>
-        <Menu.Item key="5">
-          <NavLink to="/contact" activeClassName={styles.active}>Contact</NavLink>
+        <Menu.Item key="2">
+          <Link
+            activeClass={styles.active}
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            Contact
+          </Link>
         </Menu.Item>
+        {/* ...other menu items */}
       </Menu>
     </Header>
   );

@@ -11,7 +11,6 @@ import './MLPortfolio.css'
 
 const { Header, Content, Footer } = Layout;
 
-
 const MLPortfolio = () => {
   return (
     <Layout className="layout">
@@ -23,7 +22,7 @@ const MLPortfolio = () => {
           <Introduction />
           <Experience />
           <Projects />
-          <Skills/>
+          <Skills />
           <Contact />
         </div>
       </Content>
