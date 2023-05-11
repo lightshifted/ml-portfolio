@@ -2,6 +2,8 @@
 
 👋🏾 Welcome to the GitHub repository for my portfolio website! This repository contains the source code for the portfolio, which is built using React.
 
+[View live demo](https://ml-portfolio-9a08d.web.app/)
+
 ## Project Structure
 
 The core components of the portfolio website are organized as follows:
@@ -50,14 +52,14 @@ The main entry point of the application is the MLPortfolio component. This compo
 The structure of the website is divided into several components:
 </p>
 
-- `Navbar`: This component represents the navigation bar at the top of the website.
-- `Introduction`: This component provides an introduction to the portfolio and showcases your personal information.
-- `Experience`: This component displays your relevant work experience and achievements.
-- `Projects`: This component showcases the machine learning projects you have worked on.
-- `Skills`: This component highlights your skills and expertise in machine learning.
-- `Contact`: This component allows visitors to get in touch with you.
+- `Navbar`: Represents the navigation bar at the top of the website.
+- `Introduction`: Provides an introduction to the portfolio and showcases your personal information.
+- `Experience`: Displays your relevant work experience and achievements.
+- `Projects`: Projects you have worked on.
+- `Skills`: Highlights your skills and expertise in machine learning.
+- `Contact`: Allow visitors to get in touch with you.
 
-The `Layout` component from the Ant Design library is used to create a basic structure for the website, with a header, content area, and footer. The `Footer` component displays copyright information and your name. The website is responsive, though modifications to the CSS for mobile devices is needed.
+The `Layout` component from the Ant Design library is used to create a basic structure for the website, with a header, content area, and footer. The `Footer` component displays copyright information and your name. The website is responsive, though modifications to the CSS for improved UX on mobile devices is needed.
 
 ## Usage
 To run this portfolio website locally, follow these steps:

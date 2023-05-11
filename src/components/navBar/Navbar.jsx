@@ -1,7 +1,7 @@
 import React from 'react';
 import { Menu, Layout } from 'antd';
-import { NavLink } from 'react-router-dom';
 import styles from './Navbar.module.css';
+import { GithubOutlined } from '@ant-design/icons';
 import { Link } from 'react-scroll';
 
 
@@ -10,7 +10,7 @@ const { Header } = Layout;
 const Navbar = () => {
   return (
     <Header className={`${styles.navbar} ${styles.fixed}`}>
-      <div className={styles['navbar-logo']}>View Website Repo</div>
+      <div className={styles['navbar-logo']}><a href="https://github.com/lightshifted/ml-portfolio">Website Repo</a></div>
       <Menu mode="horizontal" className={styles['navbar-menu']}>
         <Menu.Item key="1">
           <Link
