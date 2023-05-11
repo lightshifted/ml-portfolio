@@ -6,7 +6,7 @@ const { Title, Text } = Typography;
 
 const Experience = () => {
   const containerRef = useRef(null);
-  
+
   useEffect(() => {
   if (containerRef.current) {
   message.info("Scroll down to see more experiences.");
@@ -16,16 +16,16 @@ const Experience = () => {
   };
   }
   }, [containerRef.current]);
-  
+
   const handleScroll = () => {
   const container = containerRef.current;
   if (container.scrollHeight - container.scrollTop === container.clientHeight) {
   message.destroy();
   }
   };
-  
+
   return (
-  
+
   <div className={styles["experience-section"]}>
     <Title level={2}>Experience</Title>
     <div className={styles["timeline-container"]}>
@@ -37,50 +37,54 @@ const Experience = () => {
         <Title level={5}>ContractQA</Title>
         <Descriptions column={1}>
           <Descriptions.Item label="Responsibilities">
-            - Leading a team of developers to build an agent-actor system<br />
-            - Managing project timelines and deliverables<br />
-            - Collaborating with product management to ensure alignment with business goals
+            <ul>
+              <li>Leading a team of developers to unlock information in contracts using natural language commands</li>
+              <li>Managing project timelines, deliverables, and product roadmap prioritization</li>
+              <li>Collaborating with product management to ensure alignment with business goals</li>
+            </ul>
           </Descriptions.Item>
           <Descriptions.Item label="Acknowledgements">
-            - Successfully delivered the project on time and within budget<br />
-            - Received positive feedback from product management and stakeholders
+            <ul>
+              <li>Successfully delivered version 1.0 of the project on time and within budget</li>
+              <li>Received positive feedback from product management and stakeholder</li>
+            </ul>
           </Descriptions.Item>
         </Descriptions>
       </Card>
         </Timeline.Item>
         <Timeline.Items color="gray">
-          <Text className={styles["experience-date"]}>Start Date - End Date</Text>
+          <Text className={styles["experience-date"]}>Mar 2021 - July 2022</Text>
           <Card className={styles["experience-card"]} bordered={false}>
             <Title level={4}>Co-Founder | CTO</Title>
             <Title level={5}>TCW Strategies</Title>
             <Descriptions column={1}>
               <Descriptions.Item label="Responsibilities">
-                - Leading a team of developers to build an agent-actor system<br />
-                - Managing project timelines and deliverables<br />
-                - Collaborating with product management to ensure alignment with business goals
+              <ul>
+                <li>Developed product roadmap and served as lead designer of business intelligence tools</li>
+                <li>Coordinated implementation of machine learning solutions underlying all product offerings</li>
+              </ul>
               </Descriptions.Item>
               <Descriptions.Item label="Acknowledgements">
-                - Successfully delivered the project on time and within budget<br />
-                - Received positive feedback from product management and stakeholders
+                <ul>
+                  <li>Collaborated with National Educators Association to revamp data handling practices for downstream BI systems.</li>
+                </ul>
               </Descriptions.Item>
             </Descriptions>
           </Card>
         </Timeline.Items>
         <Timeline.Items color="white">
-          <Text className={styles["experience-date"]}>Start Date - End Date</Text>
+          <Text className={styles["experience-date"]}>May 2012 - Jun 2018</Text>
           <Card className={styles["experience-card"]} bordered={false}>
-            <Title level={4}>Co-Founder | CTO</Title>
-            <Title level={5}>TCW Strategies</Title>
+            <Title level={4}>Campaign Director</Title>
+            <Title level={5}>American Federation of Teachers</Title>
             <Descriptions column={1}>
               <Descriptions.Item label="Responsibilities">
-                - Leading a team of developers to build an agent-actor system<br />
-                - Managing project timelines and deliverables<br />
-                - Collaborating with product management to ensure alignment with business goals
+                <ul>
+                  <li>Coordinated and staffed pro-public education campaigns throughout the country</li>
+                  <li>Developed and sustained strategic relationships with community stakeholders ranging from public school educators to state level politicians</li>
+                </ul>
               </Descriptions.Item>
-              <Descriptions.Item label="Acknowledgements">
-                - Successfully delivered the project on time and within budget<br />
-                - Received positive feedback from product management and stakeholders
-              </Descriptions.Item>
+
             </Descriptions>
           </Card>
         </Timeline.Items>
@@ -89,5 +93,6 @@ const Experience = () => {
     </div>
     </div>
   );
-  };
+};
+
   export default Experience;
