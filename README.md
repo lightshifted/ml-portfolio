@@ -1,6 +1,6 @@
 # Jason's Portfolio
 
-👋🏾 Welcome to the GitHub repository for my portfolio website! This repository contains the source code for the portfolio, which is built using React.
+👋🏾 Welcome to the GitHub repository for my portfolio website! Here, you'll find the source code for the portfolio, which is built using React. Feel free to modify it for your own use.
 
 [View live demo](https://ml-portfolio-9a08d.web.app/)
 
